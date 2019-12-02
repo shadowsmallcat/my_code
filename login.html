@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <style>
+        *{margin: 0;padding: 0;}
+     .nav{
+         margin-right: 20px;
+         text-decoration: none;
+         float: left;
+         position: relative;
+         }
+    div.nav  p{
+        font-size: 23px;
+        color:rgb(231, 217, 21);
+        position:absolute;
+        top: 22px;
+        left: 200px;
+        width: 160px;
+    }
+    .form{
+        background-image: linear-gradient(rgb(76, 109, 199,0.9), rgb(253, 253, 253,0.9));
+        position: absolute;
+        top: 100px;
+        left: 480px;
+        height: 300px;
+        width: 300px;
+        /* margin: 20px; */
+        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-left: 50px;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+    }
+ 
+  input[type=text],input[type=password]{
+  border: 1px solid rgb(65, 112, 167);
+  height: 27px;
+  border-radius: 7px;
+}
+
+input[type=submit]{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    background: rgb(97, 97, 156);
+}
+
+.web_bg{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 1000px;
+  z-index:-10;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+
+    </style>
+</head>
+<body>
+  <img src="img/b2.jpg" alt="background" class="web_bg">  
+    <div class="nav">
+       <img src="img/logo5.png" alt="huaweilogo" height="33" width="139" style="margin: 20px;">
+       <!-- <span style="font-size:20px;">华为商城登陆</span> -->
+       <p>华为商城注册</p>
+    </div>
+    <div class="form">
+        <h2>华为账号注册：</h2>
+        <br>
+        <form action="#" method="POST">
+            用户名：&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="account" maxlength="20" autocomplete="on" pattern="{11}" placeholder=" 请输入账号：不超过20字符">
+           <br><br>
+           密码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" maxlength="8" placeholder=" 请输入密码：不超过8字符">
+           <br><br>
+           电话号码：<input type="text" name="phone" maxlength="11" autocomplete="on" placeholder=" 请输入手机号">
+           <br><br>
+           地址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="adress" maxlength="50" autocomplete="on" placeholder=" 请输入地址">
+           <br><br>
+           <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

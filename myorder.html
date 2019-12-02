@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>product{}</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .navigation{
+          height: 40px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          text-decoration: none;
+          position: relative;
+        }
+        .navigation div a{
+            padding-top: 10px;
+            text-decoration: none;
+        }
+        .n_img{
+              position: absolute;
+              top: 20px;
+        }
+        .n_a{
+            position: absolute;
+            display: inline-block;
+            left: 250px;
+            top: 30px;
+        }
+        .n_a a{
+            color: black;
+        }
+        .n_a a:hover{
+            color: rgb(214, 44, 44);
+        }
+        .introduction{
+            display: inline;
+            position: absolute;
+            top: 150px;
+            left: 600px;
+            border-radius: 20px;
+            border:solid 1px #000;
+        }
+        .product-img{
+            float: left;
+        }
+        input[name=submit]{
+            width: 200px;
+            background: cadetblue;
+            height: 30px;
+        }
+        .form{
+                 border-radius: 20px;
+                 border-block-color:  black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="n_img">
+                <img src="img/6.png" alt="logo1" height="36" width="205">     
+        </div>
+        <div class="n_a">
+                <a href="#">手机</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">笔记本&nbsp;&&nbsp;平板</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">智能家居&nbsp;&&nbsp;智慧屏</a>&nbsp;&nbsp;&nbsp;
+                <a href="#">热销配件</a>&nbsp;&nbsp;&nbsp;
+        </div>
+
+    </div>
+    <hr>
+    <div>
+        <div class="form"> 
+            <img src="img/MATEBOOKD.png" alt="product" class="product-img">
+            <div class="introduction">
+                <p>{}{}{}{}{}</p>
+                <br>
+                <hr>
+                <br>
+                <div >
+                    <p>价格&nbsp;&nbsp;&nbsp;￥{}</p>
+                    <br>
+                    <p>促销&nbsp;&nbsp;&nbsp;</p>
+                    <br>
+                    <p>服务说明&nbsp;&nbsp;&nbsp;</p>
+                    <br>
+                    <p>商品id&nbsp;&nbsp;&nbsp;</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <form action="#" >
+                        <input type="radio" name="color" >黑色
+                        <input type="radio" name="color"> 蓝色
+                        <input type="radio" name="color"> 黄色
+                        <br><br>
+                        <input type="radio" name="type" >3+32G
+                        <input type="radio" name="type"> 6+64G
+                        <input type="radio" name="type"> 8+128G
+                        <br><br>
+                        购买数量&nbsp;&nbsp;<input type=button value="+" onClick="javascript:this.form.amount.value++;">
+                        <input type="text" name="amount" value=1  size="1">       
+                        <input type="button" value="-" onClick="javascript:this.form.amount.value--;">
+                        <br><br>
+                        <input type="submit" value="下单" name="submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

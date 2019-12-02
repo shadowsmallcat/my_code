@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HUAWEI</title>
+    <style>
+        *{ list-style: none;text-decoration: none;}
+         body{ 
+              margin-left: 70px;margin-right: 100px;
+              background-image: radial-gradient(rgb(255, 255, 255), rgb(254, 254, 254), rgb(253, 253, 253)， rgb(252, 252, 252));
+             }  
+        .topclass{background: rgb(255, 255, 255);}
+        .topclass a:hover{color: crimson;}
+        .div-a{float: right;text-decoration: none;font-size: 18px;color: blue}
+
+        /* body.img{float: left;} */
+        .nav{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: block-inline;
+                
+                line-height: 36px;
+ 
+                }
+        .nav span{margin-bottom: 20px;}
+        .nav span img{float: left;margin-right: 20px; margin-left: 20px;} 
+        /* .nav span a{text-decoration: none;font-size: 18px;color: rgb(85, 19, 139); margin-left: 20px;}
+        .nav span a:hover{color: green;} */
+        .novel{color: rgb(97, 75, 194); margin-left: 20px;text-decoration: none;font-size: 18px;}
+        .novel:hover{color: crimson;}
+        .img12{margin-top: 5px;}
+        .sidebar{
+        
+            position: relative;
+            width: 200px;
+            height: 460px;
+             background:rgb(235, 231, 231);
+            /* background:rgba(6, 21, 160, 0.9); */
+            /* background: red; */
+            
+            margin-top:60px;
+            padding: 0px;
+            border-radius: 15px;  
+              /*目标元素四角都为4px的圆角*/
+           /* border-top-right-radius: 15px;     */
+            /* border-top-left-radius: 10px;   
+            border-bottom-left-radius: 10px; */
+            top: 40px;
+            left: 200px;
+        }
+        .sidebar ul {
+            list-style: none;
+            margin-left: 10px;
+            margin-top:10px;
+            padding-left: 22px;
+            /* height: 440px; */
+        }
+        .sidebar ul li{
+            font-family:"Microsoft YaHei";
+            line-height: 60px;
+        }
+        .subbar{
+            display: none;
+            height: 460px;
+            width: 500px;
+            /* background: rgb(221, 217, 209,.9); */
+            background: rgb(235, 231, 231);
+            /* background: red; */
+            position: absolute;
+            top: 0%;
+            left: 200px;
+            border-top-right-radius: 15px;    /*目标元素右上角为4px的圆角*/
+            border-bottom-right-radius: 15px;          
+        }
+        .sidebar:hover{border-top-right-radius: 0px;border-bottom-right-radius: 0px;}
+        .sidebar ul li:hover div {display: block;}
+        /* .sidebar ul li:hover{background: white;} */
+        #imid img{display: inline;}
+        /* #imid img::before{
+            content: "";
+        } */
+        .model{
+            /* display: inline-block; */
+            width: 230px;
+            height: 80px;
+            background: rgb(235, 231, 231); 
+            float: left;
+            /* margin: 10px; */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 5px;
+            border-radius: 15px; 
+            position: relative;
+            overflow: hidden;
+            /* padding-bottom: 5px;  */
+            }
+            .subbar div:hover{background: white;} 
+              
+            .subbar1{
+            display: none;
+            height: 460px;
+            width: 256px;
+            /* background: rgb(221, 217, 209,.9); */
+            background: rgb(235, 231, 231);
+            /* background: red; */
+            position: absolute;
+            top: 0%;
+            left: 200px;
+            border-top-right-radius: 15px;    /*目标元素右上角为4px的圆角*/
+            border-bottom-right-radius: 15px;
+        }
+        .subbar1 div:hover{background: white;} 
+
+        .subbar2{
+            display: none;
+            height: 460px;
+            width: 800px;
+            /* background: rgb(221, 217, 209,.9); */
+            background: rgb(235, 231, 231);
+            /* background: red; */
+            position: absolute;
+            top: 0%;
+            left: 200px;
+            border-top-right-radius: 15px;    /*目标元素右上角为4px的圆角*/
+            border-bottom-right-radius: 15px;
+        }
+        .subbar2 div:hover{background: white;} 
+        .subbar3{
+            display: none;
+            height: 460px;
+            width: 1000px;
+            /* background: rgb(221, 217, 209,.9); */
+            background: rgb(235, 231, 231);
+            /* background: red; */
+            position: absolute;
+            top: 0%;
+            left: 200px;
+            border-top-right-radius: 15px;    /*目标元素右上角为4px的圆角*/
+            border-bottom-right-radius: 15px;
+        }
+        .subbar3 div:hover{background: white;} 
+        /* p{
+            display: inline;
+            text-align: center;
+            } */
+        #divid{
+            text-align: center;
+            line-height: 75px;
+            display: inline;
+            position: absolute;
+            top: 8px;
+            left: 81px;
+            }
+        #banner{
+                width:1200px;
+                height: 552px;
+                overflow: hidden;
+                border: 3px solid #999;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                }
+        #imglist{
+                margin: 0;
+                padding: 0;
+                width: 8401px;
+                height: 552px;
+        }
+        #imglist li{float: left;}
+        #iconlist{position: absolute;right: 20px;bottom: 10px;}
+        #iconlist li{
+                float: left;
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 10px;
+                margin-left: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+                }
+        #divabso{
+                position: absolute;
+                top: 55px;
+                left: -120px; 
+        }
+        #rexiao{
+                height: 605px;
+                width: 1205px;
+                position: relative;
+                background: rgb(255，255，255);
+                top: 100px;
+                left: 190px;
+                float: left;
+        }
+        #rexiaosub{
+                width: 230px;
+                height: 290px;
+                background: rgb(243, 241, 241);
+                text-align: center;
+                height: 305px;
+                padding-top: 40px;
+                margin: 20px;
+                margin-left: 45px;
+                float: left;
+                border-radius: 15px;
+        }
+        #rexiaosub:hover{
+                background: rgb(183, 233, 240);
+
+        }
+        #rexiaosub p{
+                  font-size: 13px;
+                }
+        #notebook {
+                height: 605px;
+                width: 1205px;
+                position: relative;
+                background: rgb(255，255，255);
+                top: 850px;
+                left: 0px;    
+        }
+        #notebook::after{content: "";inline-size: 0;height: 0;width: 0;}
+        #tablet{
+                height: 605px;
+                width: 1205px;
+                position: relative;
+                background: rgb(255，255，255);
+                top: 855px;
+                left: 0px;    
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topclass">
+        <a href="#">首页</a>
+        <span>|</span>
+        <a href="#">华为官网</a>
+        <span>|</span>
+        <a href="#">荣耀官网</a>
+        <a href="#" class="div-a">我的订单</a>
+        <span  class="div-a">&nbsp|&nbsp</span>
+        <a href="#" class="div-a">登陆</a>
+        <span  class="div-a">&nbsp|&nbsp</span>
+        <a href="#" class="div-a">注册</a>
+    </div>
+    <div class="nav">
+        <span>
+                <img src="img/6.png" alt="logo1" width="205" height="36" > 
+                <img src="img/5.png" alt="logo3" width="74" height="24" class="img12">
+                <img src="img/4.png" alt="logo4" width="74" height="24" class="img12">
+        </span>
+        <span>
+                    <a href="#" class="novel">华为Mate30</a>
+                    <a href="#" class="novel">荣耀20</a>
+                    <a href="#" class="novel">华为P30</a>
+                    <a href="#" class="novel">荣耀9X</a>
+        </span>
+    </div>
+
+
+    <div id="banner">
+        <ul id="imglist">
+                <li><a href="#"><img src="img/6.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/7.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/8.png" alt=""></a></li>
+                <li><a href="#"><img src="img/10.png" alt=""></a></li>
+                <li><a href="#"><img src="img/11.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/9.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/6.jpg" alt=""></a></li>
+        </ul>
+        <ul id="iconlist"> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+      
+    <div id="divabso">
+        <div class="sidebar">
+                <ul>
+                    <li>手机
+                           <div class="subbar" id="imid">
+                               <div class="model">
+                                       <img src="img/rongyao.png" alt="rongyao"> <div id="divid"><a href="#">荣耀</a>  </div>                                      
+                               </div >
+       
+                               <div class="model">
+                                       <img src="img/mate.png" alt="mate"> <div id="divid">HUAWEI MATE系列</div>
+                               </div >
+       
+                               <div class="model">
+                                       <img src="img/P.png" alt="p"><div id="divid">HUAWEI P系列 </div>
+                               </div>
+                                       
+                               <div class="model">
+                                       <img src="img/huaweimaimang.png" alt="maimang"><div id="divid">华为麦芒系列</div>
+                               </div>
+                               
+                               <div class="model">
+                                       <img src="img/nova.png" alt="nova"><div id="divid">HUAWEI nova系列</div>
+                               </div>
+       
+                               <div class="model">
+                                       <img src="img/huaweichangxiang.png" alt="changxiang"><div id="divid">华为畅享系列</div>
+                               </div>
+       
+                               <div class="model">
+                                       <img src="img/changwan.png" alt="changwan"><div id="divid">华为畅玩系列</div>
+                               </div>
+       
+                               <div class="model">
+                                       <img src="img/4g+.png" alt="4g+"><div id="divid">移动4g+专区</div>
+                               </div>
+       
+                           </div>
+       
+                    </li>
+                    <hr>
+                    <li>笔记本&nbsp&&nbsp平板
+                        <div class="subbar1">
+                               <div class="model">
+                                       <img src="img/bijiben.png" alt="bijiben"><div id="divid">笔记本电脑</div>
+                               </div>
+           
+                               <div class="model">
+                                       <img src="img/pingban.png" alt="pingban"> <div id="divid">平板电脑</div>
+                               </div>
+           
+                               <div class="model">
+                                       <img src="img/bijibenpeijian.png" alt="bijibenpeijian"><div id="divid">笔记本配件</div>                                   
+                               </div>
+                        </div>
+                           
+                    </li>
+                    <hr>
+                    <li>智能穿戴
+                           <div class="subbar1">
+                                   <div class="model" href="#">
+                                           <img src="img/shouhuan.png" alt="shouhuan"><div id="divid">手环</div>
+                                   </div>
+               
+                                   <div class="model">
+                                           <img src="img/shoubiao.png" alt="shoubiao"> <div id="divid">手表</div>
+                                   </div>
+               
+                                   <div class="model">
+                                           <img src="img/vr.png" alt="bijibenpeijian"><div id="divid">&nbsp&nbspVR</div>                                 
+                                   </div>
+                            </div>
+                    </li>
+                    <hr>
+                    <li>智能家居&nbsp&&nbsp智慧屏
+                           <div class="subbar2">
+                                   <div class="model" href="#">
+                                           <img src="img/zhihuiping.png" alt="zhihuiping"><div id="divid">智慧屏</div>
+                                   </div>
+               
+                                   <div class="model">
+                                           <img src="img/luyouqi.png" alt="luyouqi"><div id="divid">路由器</div>
+                                   </div>
+               
+                                   <div class="model">
+                                           <img src="img/zhaoming.png" alt="zhaoming"><div id="divid">照明 </div>                               
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/dianshihezi.png" alt="dianshihezi"> <div id="divid">电视盒子</div>                                   
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/qingjie.png" alt="qingjie"> <div id="divid">清洁</div>                         
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/zimuluyou.png" alt="zimuluyou"><div id="divid">字母/分布式路由</div>                                 
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/dianlimao.png" alt="dianlimao"><div id="divid">电力猫/wifi放大器</div>                                 
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/yidongluyou.png" alt="yidongluyou"><div id="divid">移动路由</div>                              
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/jieneng.png" alt="jieneng"><div id="divid">节能</div>
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/huanjing.png" alt="huanjing"><div id="divid">环境</div>                              
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/anfang.png" alt="anfang"><div id="divid">安防</div>                              
+                                   </div>
+       
+                                   <div class="model">
+                                           <img src="img/weiyu.png" alt="weiyu"><div id="divid">卫浴</div>                              
+                                   </div>
+                            </div>
+                    </li>
+                    <hr>
+                    <li>热销配件
+                            <div  class="subbar3">
+                                        <div class="model" href="#">
+                                                        <img src="img/baohuke.png" alt="baohuke"><div id="divid"><a href="#">保护壳</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/tiemo.png" alt="yidongdianyuan"><div id="divid"><a href="#">移动电源</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/erji.png" alt="erji"><div id="divid"><a href="#">耳机</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/baohutao.png" alt="baohutao"><div id="divid"><a href="#">保护套</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/tiemo.png" alt="tiemo"><div id="divid"><a href="#">贴膜</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/yinxiang.png" alt="yinxiang"><div id="divid"><a href="#">音箱</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/zipaijia.png" alt="zipaijia"><div id="divid"><a href="#">自拍杆/支架</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/chongdianqi.png" alt="chongdianqi"><div id="divid"><a href="#">充电器/线材</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/upan.png" alt="upan"><div id="divid"><a href="#">u盘/存储卡</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/shexiangji.png" alt="shexiangji"><div id="divid"><a href="#">摄像机/镜头</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/zhinengyanjing.png" alt="zhinengyanjing"><div id="divid"><a href="#">智能眼镜</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/zhinengyingjian.png" alt="zhinengyingjian"><div id="divid"><a href="#">智能硬件</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/biaodai.png".png" alt="biaodai"><div id="divid"><a href="#">保护壳</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/shenghuozhoubian.png" alt="shenghuozhoubian"><div id="divid"><a href="#">生活周边</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/zhuanshupeijian.png" alt="zhuanshupeijian"><div id="divid"><a href="#">盒子专属配件</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/chukongbi.png" alt="baohuke"><div id="divid"><a href="#">触控笔/取卡针</a> </div>         
+                                        </div>
+
+                            </div>
+                    </li>
+                    <hr>
+                    <li>增值服务&nbsp&&nbsp其他
+                            <div class="subbar1">
+                                        <div class="model" href="#">
+                                                        <img src="img/fuwuqi.png" alt="fuwuqi"><div id="divid"><a href="#">服务器</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/zengzhika.png" alt="zengzhika"><div id="divid"><a href="#">增值卡</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/alpingtai.png" alt="alpingtai"><div id="divid"><a href="#">AL计算平台</a> </div>         
+                                        </div>
+                                        <div class="model" href="#">
+                                                        <img src="img/dianchifuwu.png" alt="dianchifuwu"><div id="divid"><a href="#">电池服务</a> </div>         
+                                        </div>
+                            </div>       
+                    </li>
+                </ul>
+           </div>
+           <div id="rexiao">
+                   <h1>热销单品：</h1>
+                <div id="rexiaosub">
+                        <a href="#"><img src="img/RONGYAO9X.png" alt="9X" height="150px" width="125px"></a>                       
+                        <p><a href="#">荣耀9X</a></p>
+                        <p>1399￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                                   <a href="#"><img src="img/RONGYAO20PRO.png" alt="20PRO" height="150px" width="125px"></a>                       
+                                   <p><a href="#">荣耀20PRO</a></p>
+                                   <p>2899￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                                   <a href="#"><img src="img/P30PRO.png" alt="P30PRO" height="150px" width="125px"></a>                       
+                                   <p><a href="#">HUAWEI&nbspP30&nbspPRO</a></p>
+                                   <p>4988￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                           <a href="#"><img src="img/NOVA5PRO.png" alt="NOVA5PRO" height="150px" width="125px"></a>                       
+                           <p><a href="#">HUAWEI&nbspNOVA5&nbspPRO</a></p>
+                           <p>2699￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                           <a href="#"><img src="img/RONGYAOV20.png" alt="v20" height="150px" width="125px"></a>                       
+                           <p><a href="#">荣耀V20</a></p>
+                           <p>2099￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                           <a href="#"><img src="img/RONGYAOPLAY3.png" alt="PLAY3" height="150px" width="125px"></a>                       
+                           <p><a href="#">荣耀play3</a></p>
+                           <p>999￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                           <a href="#"><img src="img/CHANGXIANG10.png" alt="changxiang10" height="150px" width="125px"></a>                       
+                           <p><a href="#">华为畅享10S</a></p>
+                           <p>1599￥</p>
+                   </div>
+                   <div id="rexiaosub">
+                           <a href="#"><img src="img/HUAWEIP30.png" alt="P30" height="150px" width="125px"></a>                       
+                           <p><a href="#">HUAWEI&nbspP30</a></p>
+                           <p>3688￥</p>
+                   </div>
+           </div>
+    </div>
+    <div id="notebook">
+        <h1>笔记本电脑：</h1> 
+     <div id="rexiaosub">
+             <a href="#"><img src="img/MATEBOOKD.png" alt="MATEBOOKED" height="150px" width="125px"></a>                       
+             <p><a href="#">HUAWEI&nbspMATEBOOK&nbspD</a></p>
+             <p>4988￥</p>
+        </div>
+        <div id="rexiaosub">
+                        <a href="#"><img src="img/MAGICBOOK2019.png" alt="MAGICBOOK2019" height="150px" width="125px"></a>                       
+                        <p><a href="#">荣耀MAGICBOOK&nbsp2019&nbsp科技尝鲜版</a></p>
+                        <p>3699￥</p>
+        </div>
+        <div id="rexiaosub">
+                        <a href="#"><img src="img/MATEBOOKXPRO.png" alt="MATEBOOKXPRO" height="150px" width="125px"></a>                       
+                        <p><a href="#">HUAWEI&nbspMAGICBOOK&nbspX&nbspPRO</a></p>
+                        <p>7999￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/MAGICBOOKPRO.png" alt="MAGICBOOKPRO" height="150px" width="125px"></a>                       
+                <p><a href="#">荣耀&nbspMAGICBOOK&nbspPRO&nbsp科技尝鲜版</a></p>
+                <p>4199￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/MATEBOOKE.png" alt="MATEBOOKE" height="150px" width="125px"></a>                       
+                <p><a href="#">HUAWEI&nbspMAGICBOOK&nbspE&nbsp2019</a></p>
+                <p>3999￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/MATEBOOK14.png" alt="MATEBOOK14" height="150px" width="125px"></a>                       
+                <p><a href="#">HUAWEI&nbspMAGICBOOK&nbsp14</a></p>
+                <p>5999￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/MATEBOOK13.png" alt="MATEBOOK13" height="150px" width="125px"></a>                       
+                <p><a href="#">HUAWEI&nbspMAGICBOOK&nbsp13</a></p>
+                <p>5699￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/MAGICBOOK2019.png" alt="MAGICBOOK2019" height="150px" width="125px"></a>                       
+                <p><a href="#">荣耀MAGICBOOK&nbsp2019</a></p>
+                <p>3999￥</p>
+        </div>
+</div>
+<div></div>
+<br><br><br><br><br><br><br><br><br><br>
+
+    <div id="tablet">
+        <h1>精品平板：</h1> 
+     <div id="rexiaosub">
+        <a href="#"><img src="img/RONGYAO5.png" alt="RONGYAO5" height="150px" width="125px"></a>                       
+        <p><a href="#">荣耀平板5&nbsp10.1英寸</a></p>
+        <p>1149￥</p>
+        </div>
+        <div id="rexiaosub">
+                        <a href="#"><img src="img/M68.4.png" alt="M68" height="150px" width="125px"></a>                       
+                        <p><a href="#">华为平板&nbspM6&nbsp8.4英寸</a></p>
+                        <p>1899￥</p>
+        </div>
+        <div id="rexiaosub">
+                        <a href="#"><img src="img/RONGYAO58.png" alt="RONGYAO58" height="150px" width="125px"></a>                       
+                        <p><a href="#">荣耀平板5&nbsp8英寸</a></p>
+                        <p>949￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/M5Q10.1.png" alt="M5Q10" height="150px" width="125px"></a>                       
+                <p><a href="#">华为平板&nbspM5&nbsp青春版&nbsp10.1英寸</a></p>
+                <p>1749￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/CHANGXIANGPINGBAN.png" alt="CHANGXIANGPINGBAN" height="150px" width="125px"></a>                       
+                <p><a href="#">华为畅享平板</a></p>
+                <p>1199￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/WATERPLAY.png" alt="WATERPLAY" height="150px" width="125px"></a>                       
+                <p><a href="#">荣耀平板&nbspWATERPLAY&nbsp10.1英寸</a></p>
+                <p>1799￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/WATERPLAY8.png" alt="WATERPLAY8" height="150px" width="125px"></a>                       
+                <p><a href="#">荣耀平板&nbspWATERPLAY&nbsp8英寸</a></p>
+                <p>1499￥</p>
+        </div>
+        <div id="rexiaosub">
+                <a href="#"><img src="img/M610.8.png" alt="M610" height="150px" width="125px"></a>                       
+                <p><a href="#">华为平板&nbspM6&nbsp10.8英寸</a></p>
+                <p>2299￥</p>
+        </div>
+</div>
+
+   
+    <script>
+                var imgs=document.getElementById("imglist").getElementsByTagName("li");
+                var icons=document.getElementById("iconlist").getElementsByTagName("li");
+         
+                var left = 0;/*初始化位置*/
+                imglist.style.marginLeft = left+"px";
+                //设置一个定时器
+                var timer;
+                run();
+                function run(){
+                        if(left<=-7200)
+                        {
+                                imglist.style.marginLeft = "0px";
+                                left=0;
+                        }
+                        var n = (left%1200==0)?1000:10;
+                        changeimg();
+                        var m = Math.floor(-left/1200);
+                        changeicon(m);
+                        left-=10;
+                        timer = setTimeout(run,n);
+                }
+                function changeimg(){
+                        imglist.style.marginLeft=left+"px";
+         
+                }
+
+                function changeicon(m){
+                        for(var i =0;i<icons.length;i++){
+                                icons[i].style.backgroundColor="";
+                        }
+                        icons[m].style.backgroundColor="yellow";
+                }
+                //绑定图片事件
+                for(var i=0;i<imgs.length;i++){
+                        //闭包解决
+                        (function(i){
+                                imgs[i].onmousemove=function(){
+                                clearTimeout(timer);
+                                left=-i*1200;
+                                changeimg();
+                                changeicon(i);
+                        }
+                                imgs[i].onmouseout=function(){
+                                run();
+                                 }
+                        
+                        })(i)
+                }
+                for(var i=0;i<icons.length;i++){
+                        //闭包解决
+                        (function(i){
+                                icons[i].onmousemove=function(){
+                                clearTimeout(timer);
+                                left=-i*1200;
+                                changeimg();
+                                changeicon(i);
+                        }
+                                icons[i].onmouseout=function(){
+                                run();
+                                 }
+                        
+                        })(i)
+                }
+             </script>
+</body>
+</html>
